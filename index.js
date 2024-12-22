@@ -6,6 +6,7 @@ import cookieParser from "cookie-parser";
 import morgan from "morgan";
 import helmet from "helmet";
 import connectDB from "./config/connectDB.js";
+import userRouter from "./route/user.route.js";
 
 const app = express();
 app.use(
@@ -31,6 +32,8 @@ app.get("/", (request, response) => {
     message: "Serevr is running " + Port,
   });
 });
+
+app.use("/api/user", userRouter);
 
 // Connect to MongoDB
 
