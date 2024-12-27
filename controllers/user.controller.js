@@ -1,6 +1,6 @@
 import UserModel from "../models/user.model.js";
 import bcryptjs from "bcryptjs";
-// import verifyEmailTemplate from '../utils/verifyEmailTemplate.js'
+import verifyEmailTemplate from "../utils/verifyEmailTemplate.js";
 // import generatedAccessToken from '../utils/generatedAccessToken.js'
 // import genertedRefreshToken from '../utils/generatedRefreshToken.js'
 // import uploadImageClodinary from '../utils/uploadImageClodinary.js'
