@@ -29,7 +29,7 @@ const Port = 8080 || process.env.PORT;
 app.get("/", (request, response) => {
   // server to cilent
   response.json({
-    message: "Serevr is running " + Port,
+    message: "Server is running " + Port,
   });
 });
 

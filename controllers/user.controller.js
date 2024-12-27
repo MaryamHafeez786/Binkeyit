@@ -1,12 +1,6 @@
 import UserModel from "../models/user.model.js";
 import bcryptjs from "bcryptjs";
 import verifyEmailTemplate from "../utils/verifyEmailTemplate.js";
-// import generatedAccessToken from '../utils/generatedAccessToken.js'
-// import genertedRefreshToken from '../utils/generatedRefreshToken.js'
-// import uploadImageClodinary from '../utils/uploadImageClodinary.js'
-// import generatedOtp from '../utils/generatedOtp.js'
-// import forgotPasswordTemplate from '../utils/forgotPasswordTemplate.js'
-// import jwt from 'jsonwebtoken'
 
 export async function registerUserController(request, response) {
   try {
@@ -52,6 +46,7 @@ export async function registerUserController(request, response) {
         url: VerifyEmailUrl,
       }),
     });
+
     return response.json({
       message: "User register successfully",
       error: false,
